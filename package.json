@@ -1,0 +1,29 @@
+{
+  "name": "web-scrape-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --runInBand --testLocationInResults --setupFiles dotenv/config",
+    "test:watch": "npm run test -- --watch",
+    "start": "node -r dotenv/config index.js",
+    "start:watch": "nodemon -r dotenv/config index.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.11.5",
+    "@babel/plugin-syntax-class-properties": "^7.10.4",
+    "@types/jest": "^26.0.13",
+    "eslint": "^7.9.0",
+    "jest": "^26.4.2",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
