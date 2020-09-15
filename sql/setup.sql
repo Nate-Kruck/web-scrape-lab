@@ -6,5 +6,5 @@ CREATE TABLE books (
     cover_img TEXT NOT NULL,
     rating TEXT NOT NULL,
     price TEXT NOT NULL,
-    in_stock BOOLEAN NOT NULL
+    inStock BOOLEAN
 )
