@@ -7,7 +7,9 @@
     "test": "jest --verbose --runInBand --testLocationInResults --setupFiles dotenv/config",
     "test:watch": "npm run test -- --watch",
     "start": "node -r dotenv/config index.js",
-    "start:watch": "nodemon -r dotenv/config index.js"
+    "start:watch": "nodemon -r dotenv/config index.js",
+    "producer": "node -r dotenv/config lib/producer.js",
+    "consumer": "node -r dotenv/config lib/consumer.js"
   },
   "jest": {
     "testEnvironment": "node"
@@ -25,6 +27,7 @@
   },
   "dependencies": {
     "bull": "^3.18.0",
+    "bull-board": "^0.9.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jsdom": "^16.4.0",
